@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-04T12:20:31 IST" name="CST5354Suite" finished-at="2023-07-04T12:20:53 IST" duration-ms="22627">
+    <groups>
+    </groups>
+    <test started-at="2023-07-04T12:20:31 IST" name="CST5354Test" finished-at="2023-07-04T12:20:53 IST" duration-ms="22627">
+      <class name="tests.LoginTest2">
+        <test-method is-config="true" signature="tearUp(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest2@6c6cb480]" started-at="2023-07-04T12:20:31 IST" name="tearUp" finished-at="2023-07-04T12:20:47 IST" duration-ms="15825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest2.verifyLoginUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="verifyLoginUrl()[pri:0, instance:tests.LoginTest2@6c6cb480]" started-at="2023-07-04T12:20:47 IST" name="verifyLoginUrl" description="Verify Login Url" finished-at="2023-07-04T12:20:52 IST" duration-ms="5129" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\adity\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56336/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d1179c1061e7f5600e40fa3816da091]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\adity\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56336/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d1179c1061e7f5600e40fa3816da091
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.cs.utils.SeleniumUtils.getElement(SeleniumUtils.java:23)
+at com.cs.utils.SeleniumUtils.sendKeys(SeleniumUtils.java:54)
+at pages.LoginPage.setUserName(LoginPage.java:19)
+at pages.LoginPage.loginAppl(LoginPage.java:38)
+at tests.LoginTest2.verifyLoginUrl(LoginTest2.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest2@6c6cb480]" started-at="2023-07-04T12:20:53 IST" name="tearDown" finished-at="2023-07-04T12:20:53 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest2 -->
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:tests.LoginTest@175c2241]" started-at="2023-07-04T12:20:31 IST" name="loadPropertyFile" finished-at="2023-07-04T12:20:31 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPropertyFile -->
+        <test-method is-config="true" signature="tearUp(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@175c2241]" started-at="2023-07-04T12:20:31 IST" name="tearUp" finished-at="2023-07-04T12:20:48 IST" duration-ms="16851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.verifyLoginTitle(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="verifyLoginTitle(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@175c2241]" started-at="2023-07-04T12:20:48 IST" name="verifyLoginTitle" description="Verify Login Tile" data-provider="getData" finished-at="2023-07-04T12:20:53 IST" duration-ms="4917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@175c2241]" started-at="2023-07-04T12:20:53 IST" name="tearDown" finished-at="2023-07-04T12:20:53 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- CST5354Test -->
+  </suite> <!-- CST5354Suite -->
+</testng-results>
